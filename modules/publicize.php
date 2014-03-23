@@ -20,4 +20,5 @@ function jetpack_enhancements_publicize_custom_message() {
 function jetpack_enhancements_publicize_custom_message_save() {
 	add_action( 'save_post', 'jetpack_enhancements_publicize_custom_message', 21 );
 }
+
 add_action( 'publish_post', 'jetpack_enhancements_publicize_custom_message_save' );

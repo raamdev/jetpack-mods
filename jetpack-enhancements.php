@@ -25,6 +25,10 @@ License: GNU General Public License v3 or later.
 if(!defined('WPINC')) // MUST have WordPress.
 	exit('Do NOT access this file directly: '.basename(__FILE__));
 
+
+/** Get a list of active JetPack modules so that we only load enhancements for those modules */
+$jetpack_active_modules = get_option('jetpack_active_modules');
+
 /**
  * Enhancements to the JetPack Publicize Module
  *
@@ -32,4 +36,6 @@ if(!defined('WPINC')) // MUST have WordPress.
  *   the entire post content will be used as the custom message
  *   if the post content is 100 characters or less.
  */
-require_once('modules/publicize.php');
+if ( class_exists( 'Jetpack', false ) && $jetpack_active_modules && in_array( 'publicize', $jetpack_active_modules ) ) {
+	require_once('modules/publicize.php');
+}
