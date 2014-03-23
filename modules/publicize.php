@@ -1,8 +1,8 @@
 <?php
 
 // Create our custom Publicize message
-function jetpack_enhancements_publicize_custom_message() {
-	$post = get_post();
+function jetpack_enhancements_publicize_custom_message( $post_ID ) {
+	$post = get_post( $post_ID );
 
 	/** If the post being publicized is an aside, let's use the entire aside as
 	    the Custom Message instead of just the title, if it will fit on Twitter. */
@@ -21,4 +21,5 @@ function jetpack_enhancements_publicize_custom_message_save() {
 	add_action( 'save_post', 'jetpack_enhancements_publicize_custom_message', 21 );
 }
 
+add_action( 'xmlrpc_publish_post', 'jetpack_enhancements_publicize_custom_message_save' );
 add_action( 'publish_post', 'jetpack_enhancements_publicize_custom_message_save' );
