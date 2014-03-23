@@ -36,6 +36,6 @@ $jetpack_active_modules = get_option('jetpack_active_modules');
  *   the entire post content will be used as the custom message
  *   if the post content is 100 characters or less.
  */
-if ( class_exists( 'Jetpack', false ) && $jetpack_active_modules && in_array( 'publicize', $jetpack_active_modules ) ) {
+if ( $jetpack_active_modules && in_array( 'publicize', $jetpack_active_modules ) ) {
 	require_once('modules/publicize.php');
 }
