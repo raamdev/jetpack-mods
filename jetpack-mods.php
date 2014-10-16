@@ -1,16 +1,16 @@
 <?php
 /*
-Plugin Name: Jetpack Enhacements
+Plugin Name: Jetpack Mods
 
 Version: 140323
 Stable tag: 140323
 Requires at least: 2.9.2
 Tested up to: 3.8
 
-Plugin URI: http://wordpress.org/extend/plugins/jetpack-enhacements
+Plugin URI: http://wordpress.org/extend/plugins/jetpack-mods
 Description: Provides various enhacements to the Jetpack plugin, including simplified sharing icons and tweaks to Publicize.
 
-Text Domain: jetpack-enhancements
+Text Domain: jetpack-mods
 Domain Path: /langs
 
 Author: Raam Dev
