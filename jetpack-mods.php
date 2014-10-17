@@ -8,7 +8,7 @@ Requires at least: 3.7
 Tested up to: 4.0
 
 Plugin URI: http://wordpress.org/extend/plugins/jetpack-mods
-Description: Provides various enhancements to the Jetpack plugin, including simplified sharing icons and tweaks to Publicize.
+Description: Provides various enhancements to the Jetpack plugin.
 
 Text Domain: jetpack-mods
 Domain Path: /langs
