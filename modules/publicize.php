@@ -23,7 +23,7 @@ function jetpack_mods_publicize_custom_message( $post_ID ) {
 
 		/* If our quote has <cite> tags AND it doesn't contain any double-quotes THEN
 		   let's wrap the quote itself in double-quotes for better presentation on Twitter. */
-		if (stripos($custom_message, '<cite>') !== FALSE && strpos($custom_message, '"') === FALSE) {
+		if (preg_match('/<cite>/', $custom_message) && strpos(strip_tags($custom_message), '"') === FALSE) {
 
 			$cite_start_pos = stripos($custom_message, '<cite>');
 			$quote = substr($custom_message, 0, $cite_start_pos); // Extract quote without <cite>
