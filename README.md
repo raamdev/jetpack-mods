@@ -7,11 +7,13 @@ A WordPress plugin that provides several enhancements to the JetPack plugin
 
 ### Share to Twitter
  
- - **Aside Post Format**: When a post with an *Aside* post format is published and the entire content of the post + the URL will fit inside a Tweet (<= 140 characters), then this mod well tell Jetpack Publicize to post the entire body of the post to Twitter + the URL (instead of posting only the Title + URL). 
+ - **Aside Post Format**: When a post with an *Aside* post format is published and the entire content of the post + the URL will fit inside a Tweet (<= 140 characters; you get 116 characters to use in your post, the remaining 24 characters are reserved for the URL), then this mod well tell Jetpack Publicize to post the entire body of the post to Twitter + the URL (instead of posting only the Title + URL). 
 
-    Instead of `Example Title http://example.com/example/` the tweet becomes `This is the whole aside post content, less than or equal to 116 characters (to leave room for the URL). http://example.com/example/`. If the full content body is too long to fit on Twitter, the standard Jetpack format of Title + URL is used.
+    Instead of `Example Title http://example.com/example/` the tweet becomes `This is the whole aside post content, less than or equal to 116 characters (to leave room for the URL). http://example.com/example/`. 
+    
+    If the full content body is too long to fit on Twitter, the standard Jetpack format of Title + URL is used.
  
- - **Quote Post Format**: When a post with an *Quote* post format is published and the entire content of the post + the URL will fit inside a Tweet (<= 140 characters), then this mod well tell Jetpack Publicize to post the entire body of the post to Twitter + the URL (instead of posting only the Title + URL). 
+ - **Quote Post Format**: When a post with an *Quote* post format is published and the entire content of the post + the URL will fit inside a Tweet (<= 140 characters; you get 116 characters to use in your post, the remaining 24 characters are reserved for the URL), then this mod well tell Jetpack Publicize to post the entire body of the post to Twitter + the URL (instead of posting only the Title + URL). 
 
     Instead of `Quote Title http://example.com/example-quote/` the tweet becomes `"Simplicity is the ultimate sophistication." - Leonardo Da Vinci http://example.com/example-quote/`. 
     
