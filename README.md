@@ -15,6 +15,6 @@ A WordPress plugin that provides several enhancements to the JetPack plugin
 
     Instead of `Quote Title http://example.com/example-quote/` the tweet becomes `"Simplicity is the ultimate sophistication." - Leonardo Da Vinci http://example.com/example-quote/`. 
     
-    Note that if the quote content doesn't contain double-quotes around the quote and it _does_ contain `<cite>` tags around the author of the quote, then this mod will automatically add double-quotes around the quote before posting to Twitter. A post content of `<blockquote>Simplicity is the ultimate sophistication. <cite>- Leonardo Da Vinci</cite></blockquote>` gets posted to Twitter as `"Simplicity is the ultimate sophistication." - Leonardo Da Vinci http://example.com/example-quote/` (notice the added double-quotes). This only works if you use `<cite>` tags. 
+    Note that if the quote content doesn't contain double-quotes around the quote and it _does_ contain `<cite>` tags around the author of the quote, then this mod will automatically add double-quotes around the quote before posting to Twitter. A post content of `Simplicity is the ultimate sophistication. <cite>- Leonardo Da Vinci</cite>` gets posted to Twitter as `"Simplicity is the ultimate sophistication." - Leonardo Da Vinci http://example.com/example-quote/` (notice the added double-quotes). This only works if you use `<cite>` tags.
     
     If the full content body is too long to fit on Twitter, the standard Jetpack format of Title + URL is used.
