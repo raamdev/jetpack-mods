@@ -2,7 +2,7 @@
 /*
 Plugin Name: Jetpack Mods
 
-Version: 141016
+Version: 141101
 Stable tag: 140323
 Requires at least: 3.7
 Tested up to: 4.0
