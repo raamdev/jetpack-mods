@@ -7,8 +7,7 @@ function jetpack_mods_publicize_custom_message( $post_ID ) {
 	/** If the post being publicized is an Aside, let's use the entire content as
 	 * the Custom Message instead of just the title, if it will fit on Twitter. */
 	if ( 'aside' === get_post_format( $post->ID ) ) {
-		$custom_message = apply_filters( 'the_content', $post->post_content );
-		$custom_message = strip_tags( $custom_message );
+		$custom_message = strip_tags( $post->post_content ); // Don't apply the_content; keep this content simple
 		$custom_message = trim( $custom_message );
 
 		if ( strlen( $custom_message ) <= 116 ) {
@@ -19,7 +18,7 @@ function jetpack_mods_publicize_custom_message( $post_ID ) {
 	/** If the post being publicized is a Quote, let's use the entire content as
 	 * the Custom Message instead of just the title, if it will fit on Twitter. */
 	if ( 'quote' === get_post_format( $post->ID ) ) {
-		$custom_message = apply_filters( 'the_content', $post->post_content );
+		$custom_message = $post->post_content; // Don't apply the_content; keep this content simple
 
 		/* If our quote has <cite> tags AND it doesn't contain any double-quotes THEN
 		   let's wrap the quote itself in double-quotes for better presentation on Twitter. */
